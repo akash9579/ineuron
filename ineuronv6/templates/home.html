@@ -5,36 +5,86 @@
 	<title>Home</title>
 	<!-- <link rel="stylesheet" type="text/css" href="../static/css/styles.css"> -->
 	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+
+
+    <style>
+    .main {  margin: auto;
+  width: 50%;
+  padding: 10px;
+  padding-top: 70px;}
+
+  .main1{
+  padding-top: 150px;
+}
+</style>
 </head>
 
 
 <body>
 
-	<header>
-		<div class="container">
-		<div id="brandname">
-			Machine Learning App with Flask
-		</div>
-		<h2> ineuron intership </h2>
-		
-	</div>
-	</header>
+	<nav class="navbar navbar-expand-sm bg-info navbar-dark">
+  		<ul class="navbar-nav ml-auto">
+    		<li class="nav-item">
+      			<a class="nav-link" href="#">Problem</a>
+    		</li>
+    		<li class="nav-item">
+      			<a class="nav-link" href="#">Dataset</a>
+    		</li>
+    		<li class="nav-item">
+      			<a class="nav-link" href="#">About</a>
+    		</li>
+  		</ul>
+	</nav>
 
-	<div class="ml-container">
 
-		
-    		<form method="POST" action="" enctype="multipart/form-data">
-      			<p><input type="file" name="file"></p>
-      			<p><input type="submit" value="Submit"></p>
+<div class="main1">
+  </div>
+
+
+<div class="main">
+   
+<div class="container">
+  <div class="row justify-content-center">
+    <h1>Mice protien prediction</h1>
+  </div>
+</div>
+
+
+
+
+
+
+<div class="container">
+	
+		<div class="text-center">
+
+
+			<form method="POST" action="" enctype="multipart/form-data">
+          
+            
+      			
+
+                <div class="custom-file mb-3">
+      <input type="file" class="custom-file-input" id="customFile" name="file">
+      <label class="custom-file-label" for="customFile">Choose file</label>
+    </div>
+
+
+      			<p><input type="submit" class="btn btn-primary" value="Submit"></p>
+            
     		</form>
+		</div>
 		
-		
-		
-	</div>
+        <div class="text-center">
+      <a  href="http://localhost:5000/predict" class="btn btn-info btn-lg"  role="button" >Predict</a> 
+    </div>
 
 	
-	
+</div>
 
+</div> 
 </body>
 
 

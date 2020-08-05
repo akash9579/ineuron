@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Home</title>
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+	<!-- <link rel="stylesheet" type="text/css" href="../static/css/styles.css"> -->
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+
+
+	<style>
+		.main {  margin: auto;
+  width: 50%;
+  padding: 10px;
+	padding-top: 70px;}
+
+	.main1{
+	padding-top: 150px;
+}
+</style>
+</head>
+
+
+<body>
+<nav class="navbar navbar-expand-sm bg-info navbar-dark">
+  <ul class="navbar-nav ml-auto">
+    <li class="nav-item">
+      <a class="nav-link" href="#">Problem</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Dataset</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">About</a>
+    </li>
+  </ul>
+</nav>
+
+
+<div class="main1">
+	</div>
+
+<div class="main">
+
+<div class="container">
+  <div class="row justify-content-center">
+    <h1>Mice protien prediction</h1>
+  </div>
+</div>
+
+
+<div class="container">
+	
+		<div class="text-center">
+			<a   class="btn btn-outline-dark btn-lg" role="button" >Single</a> 
+			<a  class="btn   btn-outline-dark btn-lg" role="button" >Bulk</a> 
+			<a   class="btn btn-outline-dark btn-lg "role="button">Browse</a> 
+		</div>
+		
+
+	
+</div>
+
+
+
+	<div class=" container ">
+  
+    		<form method="POST" action="" enctype="multipart/form-data">
+      			    <p>Custom file:</p>
+    <div class="custom-file mb-3">
+      <input type="file" class="custom-file-input" id="customFile" name="filename">
+      <label class="custom-file-label" for="customFile">Choose file</label>
+    </div>
+			<div class="text-center">	
+		<input  type="submit"  class="btn btn-primary" value="Submit">
+		</div>
+    		</form>
+		
+		
+		
+	</div>
+
+	<div class="container mt-3">
+	
+		<div class="text-center">
+			<a   class="btn btn-info btn-lg" role="button"  hred="#">Predict</a> 
+			
+		</div>
+		
+
+	
+</div>
+
+</div>
+</body>
+
+
+</html>
