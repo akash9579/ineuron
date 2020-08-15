@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+
+
+
+    	<style>
+		.main {  margin: auto;
+  width: 50%;
+  padding: 10px;
+	padding-top: 70px;}
+
+	.main1{
+	padding-top: 150px;
+}
+</style>
+</head>
+
+
+
+
+<body>
+
+
+	<nav class="navbar navbar-expand-sm bg-info navbar-dark">
+  <ul class="navbar-nav ml-auto">
+    <li class="nav-item">
+      <a class="nav-link" href="#">Problem</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Dataset</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">About</a>
+    </li>
+  </ul>
+</nav>
+
+<div class="main1">
+	</div>
+
+<div class="container">
+  <div class="row justify-content-center">
+    <h1>Mice protien prediction</h1>
+  </div>
+
+
+	<div class="results">
+
+	<h2>Result</h2>
+	 <table>
+         <tbody>
+         <th>prediction using RandomForestClassifier</th>
+         {# here we iterate over every item in our list#}
+         {% for item in prediction %}
+             <tr><td>{{ item }}</td></tr>
+         {% endfor %}
+         </tbody>
+     </table>
+	{#data.head(1)#}
+	</div>
+</div>
+</body>
+</html>
