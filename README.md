@@ -15,6 +15,6 @@ v6 after reduce size to 39 column apply all again and get corrected , clean mode
 
 v7 contain all techniques applied
 
-v8 basic deployment part
+v8 contain all project code till deployment
 
 
